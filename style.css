@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    --montserrat: 'Montserrat', sans-serif;
+    --playfair: 'Playfair Display', serif;
+
+    --naranja: #F2994A;
+    --gris-claro: #BDBDBD;
+    --gris-oscuro: #4F4F4F;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 700px;
+}
+
+h1{
+    font-family: var(--playfair);
+    font-weight: 700px;
+    font-size: 24px;
+    margin-left: 11px;
+}
+
+#seis-puntos{
+    position: absolute;
+    margin-left: 5px;
+    top: 40px;
+    width: 20px;
+    opacity: 0.5;
+}
+
+#descripcion{
+    font-family: var(--montserrat);
+    font-weight: 500px;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--gris-oscuro);
+    margin-left: 38px;
+    width: 60%;
+}
+
+#foto-principal{
+    width: 80%;
+    margin: 15px 10px;
+}
+
+/* ----------------------- ASIDE ------------------------ */
+
+aside{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.asidebar{
+    display: flex;
+}
+
+.vectores{
+    width: 14px;
+    position: absolute;
+    margin-top: 6px;
+}
+
+.asidebar .vectores{
+    margin-top: 18px ;
+}
+
+.tiempo{
+    padding-right: 60px;
+}
+
+h5{
+    font-family: var(--montserrat);
+    font-weight: 700px;
+    font-size: 8px;
+    color: var(--gris-claro);
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+#porciones{
+    color: var(--naranja);
+}
+
+h4{
+    font-family: var(--montserrat);
+    font-weight: 500px;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: -12px;
+}
+
+/* ---------------------INGREDIENTES----------------------- */
+
+.ingredientes{
+    margin-left: 20px;
+    width: 65%;
+}
+
+h2{
+    font-family: var(--playfair);
+    font-weight: 700px;
+    font-size: 18px;
+    color: var(--gris-oscuro);
+}
+
+.italic-p{
+    font-family: var(--playfair);
+    font-weight: 400px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+label[for="graham"]{
+    font-family: var(--montserrat);
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+.labels{
+    margin-bottom: 12px;
+}
+
+label[for="cheesecake"]{
+    font-family: var(--montserrat);
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+#sugerencias{
+    font-family: var(--montserrat);
+    font-weight: 500px;
+    font-size: 14px;
+    font-style: oblique;
+}
+
+#sugerencias span{
+    text-decoration: underline;
+}
+
+.cheesecake{
+    margin-top: 30px;
+}
+
+/* ---------------------INSTRUCCIONES----------------------- */
+
+.instrucciones{
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 60%;
+}
+
+.instrucciones-numeros{
+    background-color: var(--naranja);
+    font-family: var(--playfair);
+    font-weight: 700px;
+    font-size: 24px;
+    color: white;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.instrucciones p{
+    margin-left: 50px;
+    font-family: var(--montserrat);
+    font-weight: 400px;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+footer{
+    margin: 45px 18%;
+    margin-bottom: 10px;
+    font-family: var(--montserrat);
+    font-weight: 500px;
+    font-size: 14px;
+    color: var(--gris-claro);
+}
+
+footer span{
+    color: var(--gris-oscuro);
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+
+
+/*---------------------PANTALLA DE ESCRITORIO------------------ */
+
+@media(min-width: 1000px){
+    body{
+        margin-left: 15%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    #seis-puntos{
+        top: 59px;
+    }
+
+    #descripcion{
+        font-size: 14px;
+    }
+
+    #foto-principal{
+        width: 90%;
+    }
+
+    .asidebar{
+        flex-direction: column;
+        position: absolute;
+        right: 15%;
+        margin-top: 48px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);        border-radius: 12px;
+        padding-top: 70px;
+        padding-bottom: 25px;
+    }
+
+    .porciones{
+        position: absolute;
+        right: 21.5%;
+        margin-top: 68px;
+    }
+
+    .cubiertos{
+        margin-top: 18px;
+    }
+
+    .vectores{
+        margin-left: 40px;
+        width: 25px;
+    }
+
+    h5{
+        margin-left: 75px;
+        font-size: 10px;
+    }
+
+    h4{
+        margin-left: 75px;
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    .italic-p{
+        font-size: 18px;
+    }
+
+    label[for="graham"]{
+        font-size: 16px;
+    }
+
+    label[for="cheesecake"]{
+        font-size: 16px;
+    }
+    
+    footer{
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+}
